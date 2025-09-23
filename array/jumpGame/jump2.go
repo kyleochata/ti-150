@@ -1,6 +1,7 @@
 package jumpgame
 
 /*
+https://leetcode.com/problems/jump-game-ii/?envType=study-plan-v2&envId=top-interview-150
 	in: array of jump values
 	out: least number of jumps
 	constraint: guranteed to reach n-1
