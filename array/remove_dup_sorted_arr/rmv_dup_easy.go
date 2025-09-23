@@ -15,6 +15,8 @@ package removedupsortedarr
 	fast = 4, slow 2 --> 3 != 2 --> slow++ --> swap [0, 1, 2, 3, 1]
 
 	number of unique el is slow+1 (account for 0 index)
+
+	https://leetcode.com/problems/remove-duplicates-from-sorted-array/?envType=study-plan-v2&envId=top-interview-150
 */
 
 func removeDuplicates(nums []int) int {
