@@ -15,18 +15,17 @@ package majorityel
 			- current becomes the current value the index loop is on. Reset count to 1
 */
 func majorityElement(nums []int) int {
-	current := nums[0]
-	count := 1
-	for i := 1; i < len(nums); i++ {
-		if nums[i] != current {
-			count--
-		} else {
-			count++
+	count := 0
+	var candidate int
+	for _, num := range nums {
+		if count == 0 {
+			candidate = num
 		}
-		if count < 0 {
-			current = nums[i]
-			count = 1
+		if num == candidate {
+			count++
+		} else {
+			count--
 		}
 	}
-	return current
+	return candidate
 }
